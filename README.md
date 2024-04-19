@@ -14,7 +14,7 @@ For this assignment, you will do some work at the python interpreter. Save a sum
 You will be using the `neural.py` file that was included with this assignment. We will be going over `neural_test.py` in class.  At the top of your `a8.py` file, be sure to include the following: `from neural import *`. The asterisk means import everything.
 
 1. Construct a network with two hidden nodes and train it on the XOR data below. Notice that we have complete information about the function we are trying to approximate - an unusual situation for a neural network.
-    - How quickly (after how many training iterations) do the weights converge? Converging means the change in error over 100 iterations (the default `print_interval`) becomes neglible (for the purposes of this assignment neglible means the change in error is less than .0005: $\delta_w < .0005$. *Hint:* you may need to increase the iterations of the network by passing a number greater than the default 1000 for the `iters` argument of `train`.
+    - How quickly (after how many training iterations) do the weights converge? Converging means the change in error over 100 iterations (the default `print_interval`) becomes neglible (for the purposes of this assignment neglible means the change in error is less than .0005: $\delta_w < .0005$. *HINT:* you may need to increase the iterations of the network by passing a number greater than the default 1000 for the `iters` argument of `train`.
     - How well does the resulting network perform - What is the final error?
     - Try training several different networks to see the variation in the convergence rate. You may also want to pass in a smaller `print_interval` to `train` to get finer information about the changes in the error.
 

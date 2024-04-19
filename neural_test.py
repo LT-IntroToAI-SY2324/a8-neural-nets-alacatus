@@ -21,6 +21,7 @@ rn_training_data = [
 nn = NeuralNet(6, 1, 1)
 nn.train(rn_training_data)
 
+print("\nweights\n")
 print(nn.get_ih_weights())
 print()
 print(nn.get_ho_weights())
@@ -42,8 +43,8 @@ print(nn.evaluate([1, 1, 1, 0, 1, 1]))  # 1
 print(nn.evaluate([1, 1, 1, 1, 0, 1]))  # 1
 print(nn.evaluate([1, 1, 1, 1, 1, 0]))  # 1
 print()
-print(nn.evaluate([0, 1, 1, 1, 0, 1]))
-print(nn.evaluate([1, 0, 0, 0, 1, 0]))
+print(nn.evaluate([0, 1, 1, 1, 0, 1])) # 1*
+print(nn.evaluate([1, 0, 0, 0, 1, 0])) # 0*
 
 print("\n\nTraining GT\n\n")
 gt_training_data = [
